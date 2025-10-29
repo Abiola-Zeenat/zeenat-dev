@@ -1,7 +1,7 @@
 
 
 <div class="hero">
-  <img src="/images/zeenat_avatar.jpg" alt="Abiola Abdulsalam" class="hero-avatar">
+  <img src="images/zeenat_avatar.jpg" alt="Abiola Abdulsalam" class="hero-avatar">
   <div class="hero-content">
     <h1>Hi, I'm Abiola Abdulsalam 👋</h1>
     <h2>Backend Developer | API Architect | Problem Solver</h2>
@@ -30,4 +30,4 @@ Working with cross-functional teams to integrate backend services with frontend 
 - **Tools:** Git, GitHub, Postman
 - **Frontend:** HTML5, CSS3, ReactJS
 
-[View My Projects](/projects.html) | [Get In Touch](/contact.html)
+[View My Projects](projects.html) | [Get In Touch](contact.html)

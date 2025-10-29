@@ -42,4 +42,4 @@ I typically respond to emails within 1-24 hours. For urgent matters, please indi
 
 Looking forward to hearing from you!
 
-[View My Projects](/projects.html) | [Learn More About Me](/about.html)
+[View My Projects](projects.html) | [Learn More About Me](about.html)

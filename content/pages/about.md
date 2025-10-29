@@ -53,4 +53,4 @@ Before focusing on backend development, I completed a frontend internship at Egg
 
 I believe in writing code that's not just functional but elegant and maintainable. Every API endpoint, every database query, and every authentication flow should be crafted with care, keeping scalability and security at the forefront.
 
-[Check Out My Projects](/projects.html) | [Let's Connect](/contact.html)
+[Check Out My Projects](projects.html) | [Let's Connect](contact.html)

@@ -72,4 +72,4 @@ All my projects follow these principles:
 - **Validation:** Rigorous input validation to ensure data integrity
 - **Performance:** Optimized queries and efficient server-side logic
 
-[More Projects on GitHub](https://github.com/Abiola-Zeenat) | [Get In Touch](/contact.html)
+[More Projects on GitHub](https://github.com/Abiola-Zeenat) | [Get In Touch](contact.html)
