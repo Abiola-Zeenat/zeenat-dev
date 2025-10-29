@@ -66,7 +66,4 @@ let program () =
   Action.with_cache cache 
     (copy_images >=> create_css >=> create_pages) 
   
-let () = Yocaml_unix.serve 
-       ~level:`Info 
-       ~target:www ~port:8000 
-       program
+let () = Yocaml_unix.run program
