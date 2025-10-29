@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ metadata.title }}</title>
+    <meta name="description" content="{{ metadata.description }}">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-brand">
+                <img src="/images/ocaml.svg" alt="OCaml" class="nav-logo">
+                Zeenat.dev
+            </a>
+            <div class="nav-links">
+                <a href="/index.html" class="nav-link {% if page_id == 'home' %}active{% endif %}">Home</a>
+                <a href="/about.html" class="nav-link {% if page_id == 'about' %}active{% endif %}">About</a>
+                <a href="/projects.html" class="nav-link {% if page_id == 'projects' %}active{% endif %}">Projects</a>
+                <a href="/contact.html" class="nav-link {% if page_id == 'contact' %}active{% endif %}">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        {%- autoescape false -%} {{ yocaml_body }} {%- endautoescape -%}
+         
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Abiola Abdulsalam. Built with YOCaml & ❤️</p>
+            <div class="footer-links">
+                <a href="https://github.com/Abiola-Zeenat" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/abiola-abdulsalam" target="_blank">LinkedIn</a>
+                <a href="mailto:azabdulsalam1@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

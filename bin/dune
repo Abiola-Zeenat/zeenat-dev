@@ -1,0 +1,4 @@
+(executable
+ (name main)
+ (public_name zeenat_dev)
+ (libraries yocaml yocaml_yaml yocaml_markdown yocaml_runtime yocaml_unix yocaml_jingoo))
