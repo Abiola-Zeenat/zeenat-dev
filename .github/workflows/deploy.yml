@@ -23,7 +23,7 @@ jobs:
       - name: Build site
         run: |
           dune build
-          dune exec ./bin/main.exe
+          dune exec bin/main.exe
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
@@ -31,3 +31,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_www
           publish_branch: gh-pages
+          
