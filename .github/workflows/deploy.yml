@@ -1,0 +1,33 @@
+name: Deploy Yocaml Site
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install OCaml and Dune
+        uses: ocaml/setup-ocaml@v2
+        with:
+          ocaml-compiler: 5.1.0
+
+      - name: Install dependencies
+        run: opam install . --deps-only -y
+
+      - name: Build site
+        run: |
+          dune build
+          dune exec ./bin/main.exe
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_www
+          publish_branch: gh-pages
